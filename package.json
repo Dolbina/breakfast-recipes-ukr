@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Dolbina.github.io/ukraine-rent-car/",
+  "homepage": "https://Dolbina.github.io/breakfast-recipes-ukr/",
   "dependencies": {
     "axios": "^1.4.0",
     "formik": "^2.2.9",
