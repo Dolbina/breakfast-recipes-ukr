@@ -2,9 +2,21 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
-  max-width: 1440px;
+  width: 320px;
+  padding: 0 10px;
   margin: 0 auto;
-  padding: 0 129px 150px 128px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
 `;
 
 export const Header = styled.header`

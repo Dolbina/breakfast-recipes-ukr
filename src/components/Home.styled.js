@@ -1,52 +1,90 @@
 import styled from 'styled-components';
 
-export const MainWrapper = styled.main`
+import HomeCar3 from '../assets/images/hotel-breakfast-room-service.jpg';
+
+export const MainWrapper = styled.div`
   display: flex;
-  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.3),
+        rgba(47, 48, 58, 0.5)
+      ),
+      
+    url(${HomeCar3});
+    
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 `;
 
-export const ImageContainer = styled.div`
-  flex: 1;
-  padding: 20px;
-  border-radius: 4px;
-`;
 
-export const CarImage = styled.img`
-  max-width: 100%;
-  height: auto;
-`;
 
 export const TextContainer = styled.div`
-  flex: 2;
-  padding: 20px;
-  color: #121417;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+  width: 320px;
+  height: 100%;
+  margin-left: auto;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    gap: 20px;
+    width: 620px;
+    align-items: flex-start;
+  }
+  @media (min-width: 1440px) {
+    gap: 30px;
+    width: 800px;
+    align-items: flex-start;
+  }
 `;
 
 export const TitleHome = styled.h1`
-  margin-bottom:30px;
-  font-size: 24px;
+  color: #00d4ff;
   font-weight: 600;
+  font-size: 40px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px #5c5757;
 
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 1.4;
+  }
+  @media (min-width: 1440px) {
+    font-size: 84px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+ 
 `;
 
 export const TextHome = styled.p`
-  margin-bottom: 20px;
-  font-size: 16px;
+ 
+  color: #ffeeca;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 3px #5c5757;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  @media (min-width: 1440px) {
+    font-size: 40px;
+    line-height: 1.4;
+    
+  }
 `;
 
-export const SubtitleHome = styled.p`
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: 500;
-`;
 
-export const TextItemHome = styled.li`
-  margin-bottom: 10px;
-  font-size: 14px;
-`;
 
-export const SubtitleHomeLet = styled.p`
-  margin-top: 50px;
-  font-size: 16px;
-  font-weight:500px;
-`;
+
