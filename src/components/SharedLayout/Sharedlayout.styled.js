@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import LogoSVG from '../../assets/images/logo.svg';
 
 export const Container = styled.div`
   width: 320px;
@@ -26,7 +27,7 @@ export const Header = styled.header`
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #00d4ff;
 
   > nav {
     display: flex;
@@ -38,6 +39,8 @@ export const LogoWrap = styled.p`
 `;
 
 export const Link = styled(NavLink)`
+  display: flex;
+  align-items: center;
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
@@ -47,7 +50,7 @@ export const Link = styled(NavLink)`
 
   &.active {
     color: white;
-    background-color: #0b44cd;
+    background-color: #00d4ff;
   }
 `;
 
@@ -55,6 +58,13 @@ export const Link = styled(NavLink)`
 
 export const ContactInfo = styled.div`
   display: flex;
+  font-size: 14px;
   flex-direction: column;
   color: #121417;
+`;
+export const Logo = styled.div`
+  width: 80px;
+  height: 80px;
+  background: url(${LogoSVG}) no-repeat center center;
+  background-size: contain;
 `;

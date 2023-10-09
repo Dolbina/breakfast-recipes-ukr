@@ -5,11 +5,12 @@ import {
   Header,
   Link,
   LogoWrap,
+  Logo,
  
   ContactInfo,
 } from './Sharedlayout.styled';
 
-import  Logo  from '../../assets/images/CarForRent_2.png'
+
 
 export const SharedLayout = () => {
   return (
@@ -17,7 +18,8 @@ export const SharedLayout = () => {
       <Header>
         <nav>
           <LogoWrap>
-            <img src={Logo} alt="logo" width="40" />
+            <Logo></Logo>
+            {/* <img src={Logo} alt="logo" width="60" /> */}
           </LogoWrap>
           <Link to="/">Home</Link>
           <Link to="/catalog">Catalog</Link>
@@ -25,14 +27,11 @@ export const SharedLayout = () => {
         </nav>
         <div>
           <ContactInfo>
-            <p>Our Office Address: 123 Main Street, Kyiv, Ukraine</p>
-            <p>
-              Contact Phone Number:{' '}
-              <a href={`tel:+38-066-456-7890`}>+38-066-456-7890</a>
-            </p>
             <p>
               Email:{' '}
-              <a href={`mailto:info@carsforrent.com`}>info@carsforrent.com</a>
+              <a href={`mailto:info@breakfastrecipes.com`}>
+                info@breakfastrecipes.com
+              </a>
             </p>
           </ContactInfo>
         </div>
