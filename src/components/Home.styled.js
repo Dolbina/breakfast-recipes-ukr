@@ -27,19 +27,22 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-left: 10px;
   gap: 10px;
   width: 320px;
   height: 100%;
-  margin-left: auto;
+  /* margin-left: auto; */
   align-items: center;
 
   @media (min-width: 768px) {
+    margin-right: 30px;
     gap: 20px;
     width: 620px;
     align-items: flex-start;
+    margin-left: auto;
   }
   @media (min-width: 1440px) {
+    margin-right: 40px;
     gap: 30px;
     width: 800px;
     align-items: flex-start;
@@ -49,7 +52,7 @@ export const TextContainer = styled.div`
 export const TitleHome = styled.h1`
   color: #00d4ff;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 1.6;
   text-shadow: 1px 1px 3px #5c5757;
 

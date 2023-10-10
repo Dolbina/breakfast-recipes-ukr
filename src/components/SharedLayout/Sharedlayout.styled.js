@@ -1,23 +1,21 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import LogoSVG from '../../assets/images/logo.svg';
+import LogoImg from '../../assets/images/logo.jpg';
 
 export const Container = styled.div`
-  width: 320px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 
+  @media (min-width: 420px) {
+    width: 400px;
+  }
   @media (min-width: 768px) {
     width: 768px;
-    padding: 0 20px;
-    margin: 0 auto;
   }
   @media (min-width: 1440px) {
     width: 1440px;
-    padding: 0 20px;
-    margin: 0 auto;
   }
-  
 `;
 
 export const Header = styled.header`
@@ -45,26 +43,43 @@ export const Link = styled(NavLink)`
   border-radius: 4px;
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 
   &.active {
     color: white;
     background-color: #00d4ff;
   }
+
+  @media (min-width:768px) {
+    font-size: 14px;
+  }
 `;
 
 
 
 export const ContactInfo = styled.div`
-  display: flex;
-  font-size: 14px;
-  flex-direction: column;
-  color: #121417;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    color: #121417;
+  }
 `;
 export const Logo = styled.div`
-  width: 80px;
-  height: 80px;
-  background: url(${LogoSVG}) no-repeat center center;
+  width: 40px;
+  height: 40px;
+  background: url(${LogoImg}) no-repeat center center;
   background-size: contain;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (min-width: 1440px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
