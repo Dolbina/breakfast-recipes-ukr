@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import LogoImg from '../../assets/images/logo.jpg';
-// import LogoSVG from '../../assets/images/logo.svg';
+
 
 export const Container = styled.div`
   width: 100%;
