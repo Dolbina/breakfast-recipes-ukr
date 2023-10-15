@@ -2,23 +2,26 @@ import styled from 'styled-components';
 
 import HomeCar3 from '../assets/images/hotel-breakfast-room-service.jpg';
 
+
+
 export const MainWrapper = styled.div`
   display: flex;
 
   width: 100%;
   height: 100vh;
   background: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.3),
-        rgba(47, 48, 58, 0.5)
-      ),
-      
+      to right,
+      rgba(47, 48, 58, 0.3),
+      rgba(47, 48, 58, 0.5)
+    ),
     url(${HomeCar3});
-    
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+
+ 
 `;
 
 

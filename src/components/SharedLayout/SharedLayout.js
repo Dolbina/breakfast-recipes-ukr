@@ -5,7 +5,7 @@ import {
   Header,
   Link,
   LogoWrap,
-  Logo,
+  // Logo,
  
   ContactInfo,
 } from './Sharedlayout.styled';
@@ -18,7 +18,8 @@ export const SharedLayout = () => {
       <Header>
         <nav>
           <LogoWrap>
-            <Logo></Logo>
+            {/* <Logo></Logo> */}
+           
             {/* <img src={Logo} alt="logo" width="60" /> */}
           </LogoWrap>
           <Link to="/">Home</Link>

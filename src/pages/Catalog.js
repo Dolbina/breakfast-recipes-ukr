@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Formik, Field } from 'formik';
+// import { Formik, Field } from 'formik';
 import * as yup from 'yup';
 import { CarGallary } from 'components/CarGallary/CarGallary';
 import { Loader } from '../components/Loader/Loader';
@@ -92,21 +92,21 @@ const Catalog = () => {
    outline: 'none',
  };
   
-  const uniqueMakes = [...new Set(cars.map(car => car.make))];
+  // const uniqueMakes = [...new Set(cars.map(car => car.make))];
   
-  const minPrice = Math.min(
-    ...cars.map(car => Number(car.rentalPrice.replace('$', '')))
-  );
-  const maxPrice = Math.max(
-    ...cars.map(car => Number(car.rentalPrice.replace('$', '')))
-  );
+  // const minPrice = Math.min(
+  //   ...cars.map(car => Number(car.rentalPrice.replace('$', '')))
+  // );
+  // const maxPrice = Math.max(
+  //   ...cars.map(car => Number(car.rentalPrice.replace('$', '')))
+  // );
 
   
-  const uniquePrices = [];
-  for (let price = minPrice; price <= maxPrice; price += 10) {
-    uniquePrices.push(price);
-  }
-  uniquePrices.sort((a, b) => a - b);
+  // const uniquePrices = [];
+  // for (let price = minPrice; price <= maxPrice; price += 10) {
+  //   uniquePrices.push(price);
+  // }
+  // uniquePrices.sort((a, b) => a - b);
 
   const loadMoreCars = () => {
     const totalVisibleCars = visibleCars + 8;
@@ -122,6 +122,7 @@ const Catalog = () => {
         setIsLoading(true);
         setError(null);
         const results = await fetchCars();
+        console.log(results);
         setCars(results);
         setFilteredCars(results);
       } catch (error) {
@@ -139,20 +140,20 @@ const Catalog = () => {
     <main>
       <TitleHidden>Car for rent</TitleHidden>
 
-      <Formik
+      {/* <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={values => {
           const { selectedMake, selectedPrice, minMileage, maxMileage } =
-            values;
+            values; 
 
-          const filtered = cars
-            .filter(car => {
-              const isMakeMatch =
-                selectedMake === '' || car.make === selectedMake;
-              return isMakeMatch;
-            })
-            .filter(car => {
+         const filtered = cars
+        .filter(car => { 
+               const isMakeMatch =
+               selectedMake === '' || car.make === selectedMake;
+            return isMakeMatch;
+           })
+          .filter(car => {
               const isPriceMatch =
                 selectedPrice === 0 ||
                 Number(car.rentalPrice.replace('$', '')) <= selectedPrice;
@@ -216,15 +217,15 @@ const Catalog = () => {
 
           <ButtonSearch type="submit">Search</ButtonSearch>
         </Form>
-      </Formik>
+      </Formik> */}
 
       {!isLoading && error && <ErrorMessage>{error}</ErrorMessage>}
       {isLoading && <Loader />}
-      {!error && filteredCars.length > 0 && (
+      {!error && cars.length > 0 && (
         <>
-          <CarGallary cars={filteredCars.slice(0, visibleCars)} />
+          <CarGallary cars={cars.slice(0, visibleCars)} />
 
-          {showLoadMore && filteredCars.length > 8 && (
+          {showLoadMore && cars.length > 8 && (
             <ButtonWrap>
               <ButtonLoadMore type="button" onClick={loadMoreCars}>
                 Load more
@@ -233,7 +234,7 @@ const Catalog = () => {
           )}
         </>
       )}
-      {!error && cars.length > 0 && filteredCars.length === 0 && (
+      {!error && cars.length > 0 && cars.length === 0 && (
         <ErrorMessage>Incorrect parameters. No cars found.</ErrorMessage>
       )}
     </main>

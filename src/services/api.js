@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const fetchCars = async () => {
   const { data } = await axios.get(
-    `https://647798c89233e82dd53be788.mockapi.io/adverts`
+    `https://6529972055b137ddc83f0439.mockapi.io/recipes`
   );
   return data;
 }

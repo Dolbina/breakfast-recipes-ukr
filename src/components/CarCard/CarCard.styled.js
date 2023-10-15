@@ -70,7 +70,7 @@ export const TextWrap = styled.div`
 
 export const TextWrapAddress = styled.div`
   display: flex;
- 
+ font-size: 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;

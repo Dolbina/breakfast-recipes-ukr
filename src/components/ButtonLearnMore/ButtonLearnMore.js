@@ -1,7 +1,7 @@
 import { ModalCar } from 'components/ModalCar/ModalCar';
 import { Btn } from './ButtonLearnMore.styled';
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+
 
 
 export const ButtonLearnMore =
@@ -39,17 +39,4 @@ useEffect(() => {
     );
   };
 
-ButtonLearnMore.propTypes = {
-  car: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    make: PropTypes.string.isRequired,
-    model: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    rentalPrice: PropTypes.string.isRequired,
-    address: PropTypes.string.isRequired,
-    rentalCompany: PropTypes.string.isRequired,
-    accessories: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-    type: PropTypes.string.isRequired,
-    functionalities: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  }).isRequired,
-};
+

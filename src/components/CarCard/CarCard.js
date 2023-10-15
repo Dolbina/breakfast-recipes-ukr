@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+
 import {
   CardWrap,
   Img,
@@ -36,11 +36,7 @@ function toggleFavorite(carId) {
 
 
 export const CarCard = ({ car }) => {
-  const address = car.address;
-  const parts = address.split(', ');
-  const city = parts[1];
-  const country = parts[2];
-
+ 
   const [isFavorites, setIsFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites'))?.includes(car.id) || false
   );
@@ -54,7 +50,7 @@ export const CarCard = ({ car }) => {
   return (
     <CardWrap>
       <ImageContainer>
-        <Img src={car.img} alt={car.make} />
+        <Img src={car.img} alt={car.title} />
         <IconWrap>
           {isFavorites ? (
             <IconHeart aria-label="heart" onClick={toggleFavorites} />
@@ -68,18 +64,17 @@ export const CarCard = ({ car }) => {
         <SubtitleWrap>
           <div>
             <SubtitleCard>
-              {`${car.make} `}
-              <SubtitleCardBlue>{`${car.model}`}</SubtitleCardBlue>
-              {`, ${car.year}`}
+              {`${car.title} `}
+              <SubtitleCardBlue>{`${car.time}`}</SubtitleCardBlue>
+              {`, ${car.person}`}
             </SubtitleCard>
           </div>
           <div>
-            <SubtitleCard>{`${car.rentalPrice}`}</SubtitleCard>
+            <SubtitleCard></SubtitleCard>
           </div>
         </SubtitleWrap>
         <TextWrapAddress>
-          <p>{`${city} | ${country} | ${car.rentalCompany} `}</p>
-          <p>{`${car.type} | ${car.model} | ${car.id}`}</p>
+          
         </TextWrapAddress>
       </TextWrap>
       <ButtonLearnMore car={car}>Learn more</ButtonLearnMore>
@@ -87,17 +82,4 @@ export const CarCard = ({ car }) => {
   );
 };
 
-CarCard.propTypes = {
-  car: PropTypes.shape({
-    img: PropTypes.string.isRequired,
-    make: PropTypes.string.isRequired,
-    model: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    rentalPrice: PropTypes.string.isRequired,
-    address: PropTypes.string.isRequired,
-    rentalCompany: PropTypes.string.isRequired,
-    accessories: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-    type: PropTypes.string.isRequired,
-    functionalities: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  }).isRequired,
-};
+

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import LogoImg from '../../assets/images/logo.jpg';
+// import LogoSVG from '../../assets/images/logo.svg';
 
 export const Container = styled.div`
   width: 100%;
@@ -32,8 +33,14 @@ export const Header = styled.header`
   }
 `;
 
-export const LogoWrap = styled.p`
+export const LogoWrap = styled.div`
+  width: 75px;
+  height: 48px;
   margin-right: 8px;
+
+  background: url(${LogoImg}) no-repeat center center;
+  background-size: contain;
+  fill: #ff5b3d;
 `;
 
 export const Link = styled(NavLink)`
