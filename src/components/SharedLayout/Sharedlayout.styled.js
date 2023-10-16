@@ -36,11 +36,17 @@ export const Header = styled.header`
 export const LogoWrap = styled.div`
   width: 75px;
   height: 48px;
-  margin-right: 8px;
+ 
 
   background: url(${LogoImg}) no-repeat center center;
   background-size: contain;
-  fill: #ff5b3d;
+  
+  cursor: pointer; 
+  transition: transform 0.3s; 
+
+  &:hover {
+    transform: scale(1.1); 
+  }
 `;
 
 export const Link = styled(NavLink)`
@@ -62,7 +68,15 @@ export const Link = styled(NavLink)`
     font-size: 14px;
   }
 `;
+export const LinkLogo = styled(NavLink)`
+  padding: 2px;
+  border-radius: 4px;
 
+  &.active {
+    color: white;
+    background-color: #00d4ff;
+  }
+`;
 
 
 export const ContactInfo = styled.div`

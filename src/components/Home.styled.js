@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import HomeCar3 from '../assets/images/hotel-breakfast-room-service.jpg';
+import Hero from '../assets/images/hotel-breakfast-room-service.jpg';
 
 
 
@@ -14,14 +14,12 @@ export const MainWrapper = styled.div`
       rgba(47, 48, 58, 0.3),
       rgba(47, 48, 58, 0.5)
     ),
-    url(${HomeCar3});
+    url(${Hero});
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-
- 
 `;
 
 
@@ -34,7 +32,7 @@ export const TextContainer = styled.div`
   gap: 10px;
   width: 320px;
   height: 100%;
-  /* margin-left: auto; */
+
   align-items: center;
 
   @media (min-width: 768px) {

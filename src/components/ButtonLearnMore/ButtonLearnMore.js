@@ -29,7 +29,7 @@ useEffect(() => {
       <div>
         <div>
           <Btn type="button" onClick={openModal}>
-            Learn more
+            Рецепт
           </Btn>
         </div>
         <>

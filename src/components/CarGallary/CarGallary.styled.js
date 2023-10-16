@@ -13,6 +13,7 @@ export const CarGallaryWrap = styled.ul`
   list-style: none;
   padding: 0;
   grid-row-gap: 50px;
+  
 `;
 
 export const TitleHidden = styled.h1`

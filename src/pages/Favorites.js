@@ -6,6 +6,7 @@ import { ErrorMessage } from '../components/ErrorMessage.styled';
 import { CarGallary } from 'components/CarGallary/CarGallary';
 import SidebarComponent from 'components/SideBar/SideBar';
 import { BurgerButton } from '../components/SideBar/SideBar.styled';
+import { NoRecipes } from 'components/NoRecipes/NoRecipes';
 
 
 const Favorites = () => {
@@ -61,7 +62,7 @@ const Favorites = () => {
           {filteredCars.length > 0 ? (
             <CarGallary cars={filteredCars} />
           ) : (
-            <ErrorMessage>Your list of favorite cars is empty</ErrorMessage>
+            <NoRecipes/>
           )}
         </>
       )}

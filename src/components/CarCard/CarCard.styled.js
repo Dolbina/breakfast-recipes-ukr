@@ -31,8 +31,8 @@ export const IconWrap = styled.div`
 
 export const IconHeart = styled(IoMdHeart)`
   width: 18px;
-height: 18px;
-  color: #3470FF;
+  height: 18px;
+  color: #e3327c;
 `;
 
 export const IconHeartEmpty = styled(IoMdHeartEmpty)`

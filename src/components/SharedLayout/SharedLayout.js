@@ -5,6 +5,7 @@ import {
   Header,
   Link,
   LogoWrap,
+  LinkLogo,
   // Logo,
  
   ContactInfo,
@@ -17,14 +18,14 @@ export const SharedLayout = () => {
     <Container>
       <Header>
         <nav>
-          <LogoWrap>
-            {/* <Logo></Logo> */}
-           
-            {/* <img src={Logo} alt="logo" width="60" /> */}
-          </LogoWrap>
-          <Link to="/">Home</Link>
-          <Link to="/catalog">Catalog</Link>
-          <Link to="/favorites">Favorites</Link>
+          <LinkLogo to="/">
+            <LogoWrap>
+              
+            </LogoWrap>
+          </LinkLogo>
+
+          <Link to="/catalog">Рецепти</Link>
+          <Link to="/favorites">Улюблені</Link>
         </nav>
         <div>
           <ContactInfo>

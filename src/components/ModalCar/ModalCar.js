@@ -10,7 +10,7 @@ import {
   ImageContainer,
   SubtitleCardForModal,
  
-  Rental,
+ 
 } from './ModalCar.styled';
 
 import { SubtitleCardBlue, TextWrapAddress } from 'components/CarCard/CarCard.styled';
@@ -73,9 +73,7 @@ export const ModalCar = ({ car, isOpen, onClose }) => {
           <p>{`${car.recipe}`}</p>
         </TextWrapAddress>
        
-        <Rental>
-          <a href="tel:+380730000000">Rental car</a>
-        </Rental>
+        
       </ModalWrap>
     </Modal>
   );

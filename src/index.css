@@ -3,6 +3,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
      width: 100%;
   min-height: 100vh;
+      background: linear-gradient(180deg,#9BCDD7,#fff);
 }
 
 main {
