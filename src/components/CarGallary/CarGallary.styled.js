@@ -1,19 +1,10 @@
 import styled from 'styled-components';
 
 export const CarGallaryWrap = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(
-    4,
-    minmax(274px, 1fr)
-  ); 
-  grid-auto-rows: 426px; 
-  grid-gap: 29px; 
-  max-width: 1440px; 
-  margin: 0 auto; 
-  list-style: none;
-  padding: 0;
-  grid-row-gap: 50px;
-  
+display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 `;
 
 export const TitleHidden = styled.h1`

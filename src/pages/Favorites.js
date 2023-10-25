@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+
 import { Loader } from '../components/Loader/Loader';
 import { fetchCars } from '../services/api';
 import { ErrorMessage } from '../components/ErrorMessage.styled';
 import { CarGallary } from 'components/CarGallary/CarGallary';
-import SidebarComponent from 'components/SideBar/SideBar';
-import { BurgerButton } from '../components/SideBar/SideBar.styled';
+
+
 import { NoRecipes } from 'components/NoRecipes/NoRecipes';
 
 
@@ -15,15 +15,11 @@ const Favorites = () => {
   const [cars, setCars] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+   
 
-    const toggleSidebar = () => {
-      setSidebarOpen(!sidebarOpen);
-    };
 
-    const closeSidebar = () => {
-      setSidebarOpen(false);
-    };
+
+   
 
   useEffect(() => {
     const fetchCars3 = async () => {
@@ -53,8 +49,8 @@ const Favorites = () => {
 
   return (
     <main>
-      {sidebarOpen && <SidebarComponent isOpen={sidebarOpen} onClose={closeSidebar} />}
-      <BurgerButton onClick={toggleSidebar}><RxHamburgerMenu size="24" fill="#121417"/></BurgerButton>
+     
+     
       {!isLoading && error && <ErrorMessage>{error}</ErrorMessage>}
       {isLoading && <Loader />}
       {!error && (

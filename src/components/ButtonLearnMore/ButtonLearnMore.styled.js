@@ -12,7 +12,7 @@ export const Btn = styled.button`
   background-color: #00d4ff;
   border: none;
 
-  margin-top: 28px;
+  /* margin-top: 28px; */
 
   color: #fff;
   font-family: inherit;

@@ -65,15 +65,12 @@ export const ModalCar = ({ car, isOpen, onClose }) => {
         <div>
           <SubtitleCardForModal>
             {`${car.title} `}
-            <SubtitleCardBlue>{`${car.person}`}</SubtitleCardBlue>
-            
+            <SubtitleCardBlue>{`Час: ${car.time} , порції: ${car.person}`}</SubtitleCardBlue>
           </SubtitleCardForModal>
         </div>
         <TextWrapAddress>
           <p>{`${car.recipe}`}</p>
         </TextWrapAddress>
-       
-        
       </ModalWrap>
     </Modal>
   );

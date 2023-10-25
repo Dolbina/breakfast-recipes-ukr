@@ -44,7 +44,7 @@ export const IconHeartEmpty = styled(IoMdHeartEmpty)`
 export const SubtitleCard = styled.h2`
   color: #121417;
   font-size: 16px;
- 
+  height: 84px;
   font-weight: 500;
   line-height: 1.5;
   margin-top: 14px;
@@ -62,10 +62,10 @@ export const SubtitleWrap = styled.div`
 
 export const TextWrap = styled.div`
   display: flex;
-  padding-right: 9px;
+  
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+ 
 `;
 
 export const TextWrapAddress = styled.div`

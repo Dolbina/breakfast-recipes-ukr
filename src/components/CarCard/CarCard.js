@@ -65,17 +65,16 @@ export const CarCard = ({ car }) => {
           <div>
             <SubtitleCard>
               {`${car.title} `}
-              <SubtitleCardBlue>{`${car.time}`}</SubtitleCardBlue>
-              {`, ${car.person}`}
+              <SubtitleCardBlue>{`Час: ${car.time} , порції: ${car.person}`}</SubtitleCardBlue>
+             
             </SubtitleCard>
+           
           </div>
           <div>
             <SubtitleCard></SubtitleCard>
           </div>
         </SubtitleWrap>
-        <TextWrapAddress>
-          
-        </TextWrapAddress>
+        <TextWrapAddress></TextWrapAddress>
       </TextWrap>
       <ButtonLearnMore car={car}>Learn more</ButtonLearnMore>
     </CardWrap>

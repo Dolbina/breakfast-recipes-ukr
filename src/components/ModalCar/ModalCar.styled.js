@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import {
-  SubtitleCard
-} from 'components/CarCard/CarCard.styled';
+
 
 export const CloseBtn = styled.button`
   background-color: transparent;
@@ -20,11 +18,14 @@ export const CloseBtnWrap = styled.div`
 
 `;
 export const ModalWrap = styled.div`
+
   width: 461px;
   height: 100%;
   padding: 0px 24px 24px 24px;
- 
+
   background-color: #fff;
+  height: 600px;
+  overflow: auto;
 `;
 
 export const Img = styled.img`
@@ -43,10 +44,16 @@ export const ImageContainer = styled.div`
   background-color: #f3f3f2;
 `;
 
-export const SubtitleCardForModal = styled(SubtitleCard)`
-margin-bottom: 8px;
+export const SubtitleCardForModal = styled.h2`
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 1.33;
+  color: #121417;
+  font-size: 16px;
+ 
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 14px;
 `;
 
 export const Description = styled.p`
