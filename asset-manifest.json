@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/breakfast-recipes-ukr/static/css/main.22020f3a.css",
-    "main.js": "/breakfast-recipes-ukr/static/js/main.81bb1f8c.js",
+    "main.js": "/breakfast-recipes-ukr/static/js/main.04598907.js",
     "static/js/9.87a5ba1c.chunk.js": "/breakfast-recipes-ukr/static/js/9.87a5ba1c.chunk.js",
-    "static/js/334.fa72a0dc.chunk.js": "/breakfast-recipes-ukr/static/js/334.fa72a0dc.chunk.js",
-    "static/js/875.0fb37772.chunk.js": "/breakfast-recipes-ukr/static/js/875.0fb37772.chunk.js",
+    "static/js/334.2206d8e0.chunk.js": "/breakfast-recipes-ukr/static/js/334.2206d8e0.chunk.js",
+    "static/js/875.e76b1c1e.chunk.js": "/breakfast-recipes-ukr/static/js/875.e76b1c1e.chunk.js",
     "static/js/978.415e8c53.chunk.js": "/breakfast-recipes-ukr/static/js/978.415e8c53.chunk.js",
     "static/media/hotel-breakfast-room-service.jpg": "/breakfast-recipes-ukr/static/media/hotel-breakfast-room-service.7ce8fac2d3a040147710.jpg",
     "static/media/Montserrat-SemiBold.ttf": "/breakfast-recipes-ukr/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
@@ -16,14 +16,14 @@
     "static/media/Manrope-Regular.ttf": "/breakfast-recipes-ukr/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
     "index.html": "/breakfast-recipes-ukr/index.html",
     "main.22020f3a.css.map": "/breakfast-recipes-ukr/static/css/main.22020f3a.css.map",
-    "main.81bb1f8c.js.map": "/breakfast-recipes-ukr/static/js/main.81bb1f8c.js.map",
+    "main.04598907.js.map": "/breakfast-recipes-ukr/static/js/main.04598907.js.map",
     "9.87a5ba1c.chunk.js.map": "/breakfast-recipes-ukr/static/js/9.87a5ba1c.chunk.js.map",
-    "334.fa72a0dc.chunk.js.map": "/breakfast-recipes-ukr/static/js/334.fa72a0dc.chunk.js.map",
-    "875.0fb37772.chunk.js.map": "/breakfast-recipes-ukr/static/js/875.0fb37772.chunk.js.map",
+    "334.2206d8e0.chunk.js.map": "/breakfast-recipes-ukr/static/js/334.2206d8e0.chunk.js.map",
+    "875.e76b1c1e.chunk.js.map": "/breakfast-recipes-ukr/static/js/875.e76b1c1e.chunk.js.map",
     "978.415e8c53.chunk.js.map": "/breakfast-recipes-ukr/static/js/978.415e8c53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22020f3a.css",
-    "static/js/main.81bb1f8c.js"
+    "static/js/main.04598907.js"
   ]
 }
