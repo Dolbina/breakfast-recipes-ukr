@@ -18,14 +18,22 @@ export const CloseBtnWrap = styled.div`
 
 `;
 export const ModalWrap = styled.div`
-
-  width: 461px;
+  width: 290px;
   height: 100%;
-  padding: 0px 24px 24px 24px;
+  padding: 0px 5px 5px;
 
   background-color: #fff;
   height: 600px;
   overflow: auto;
+
+  @media (min-width: 425px) {
+    width: 350px;
+    padding: 0px 10px 10px;
+  }
+  @media (min-width: 768px) {
+    width: 461px;
+    padding: 0px 24px 24px;
+  }
 `;
 
 export const Img = styled.img`

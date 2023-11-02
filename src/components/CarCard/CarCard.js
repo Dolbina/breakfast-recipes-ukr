@@ -65,7 +65,7 @@ export const CarCard = ({ car }) => {
           <div>
             <SubtitleCard>
               {`${car.title} `}
-              <SubtitleCardBlue>{`Час: ${car.time} , порції: ${car.person}`}</SubtitleCardBlue>
+              <SubtitleCardBlue>{`Час: ${car.time} хв., порції: ${car.person}`}</SubtitleCardBlue>
              
             </SubtitleCard>
            

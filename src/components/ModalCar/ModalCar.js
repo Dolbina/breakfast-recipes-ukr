@@ -24,9 +24,9 @@ const customStyles = {
     bottom: 0,
     backgroundColor: 'rgba(18, 20, 23, 0.50)',
     zIndex: '3',
-   
   },
   content: {
+    // width: '90%',
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -40,6 +40,7 @@ const customStyles = {
     padding: '16px',
     zIndex: '999',
   },
+ 
 };
 
 Modal.setAppElement('#root');
@@ -65,7 +66,7 @@ export const ModalCar = ({ car, isOpen, onClose }) => {
         <div>
           <SubtitleCardForModal>
             {`${car.title} `}
-            <SubtitleCardBlue>{`Час: ${car.time} , порції: ${car.person}`}</SubtitleCardBlue>
+            <SubtitleCardBlue>{`Час: ${car.time} хв., порції: ${car.person}`}</SubtitleCardBlue>
           </SubtitleCardForModal>
         </div>
         <TextWrapAddress>
